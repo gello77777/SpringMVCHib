@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Page</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New person</title>
+</head>
+<body>
+
+<form th:method="POST" th:action="@{/add}" th:object="${user}">
+    <label for="name">Enter user name: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br>
+    <br>
+    <label for="age">Enter user age: </label>
+    <input type="text" th:field="*{age}" id="age"/>
+    <br>
+    <br>
+
+    <label for="city">Enter user city: </label>
+    <input type="text" th:field="*{city}" id="city"/>
+    <br/>
+    <br>
+
+    <input type="submit" value="Add User"/>
+</form>
+
+</body>
+</html>
+</body>
+</html>
